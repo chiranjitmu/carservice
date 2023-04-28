@@ -1,27 +1,32 @@
 import React from "react";
-import { View, StatusBar, SafeAreaView, StyleSheet } from "react-native";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
+import { createStackNavigator } from "@react-navigation/stack";
+import { NavigationContainer } from "@react-navigation/native";
+import Home from "./components/Home";
+import Redirected from "./components/Redirected";
 
+const Stack = createStackNavigator();
 
 function App() {
   return (
-    <SafeAreaView style={styles.container}>
-      <View
-        style={{ paddingHorizontal: 20, flex: 1, backgroundColor: "#030306" }}
-      >
-        <Header />
-        <Hero />
-      </View>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            headerShown: false,
+          }}
+        />
+        <Stack.Screen
+          name="Redirected"
+          component={Redirected}
+          options={{
+            headerShown: false,
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    paddingTop: StatusBar.currentHeight,
-  },
-});
 
 export default App;

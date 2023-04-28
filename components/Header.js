@@ -14,7 +14,7 @@ import colors from "./colors";
 
 const Header = () => {
   const [modalVisible, setModalVisible] = useState(false);
-
+  
   return (
     <View
       style={{

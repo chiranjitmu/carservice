@@ -9,7 +9,7 @@
     "splash": {
       "image": "./assets/cars/basic.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "black"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -20,7 +20,7 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/cars/basic.png",
-        "backgroundColor": "#ffffff"
+           "backgroundColor": "black"
       }
     },
     "web": {
