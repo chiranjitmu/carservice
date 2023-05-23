@@ -108,7 +108,7 @@ const Hero = () => {
               marginBottom: 10,
             }}
           >
-            Car Service
+            Car-Service
           </Text>
 
           <Text
